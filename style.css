@@ -1,0 +1,381 @@
+body {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-style: normal; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: rgb(132, 14, 201);
+    transition: 0,3s all;
+}
+
+#inscreva-se-btn{
+    border: 2px solid rgb(128,128,128);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#inscreva-se-btn:hover{
+    background-color: rgb(128,128,128);
+    color: white;
+}
+
+h1{
+    font-weight: 200;
+}
+
+
+
+
+.profile-pic {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    margin: auto 60px;
+}
+
+
+
+h2 {
+    font-size: 16px;
+    line-height: 50px;
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0; /* Remove margem padrão */
+    margin-top: 15px; /* Ajusta o espaço entre o h1 e o h2 */ 
+}
+
+p {
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+span{
+    color: rgb(255, 255, 255);
+}
+
+h3 {
+    font-size: 34px;
+    line-height: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0; /* Remove qualquer margem padrão */ 
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 50px;
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0; /* Remove margem padrão */
+    margin-top: 10px; /* Ajusta o espaço entre o h1 e o h2 */ 
+}
+
+
+
+.shows {
+    margin-top: 100px;
+}
+
+
+/* Estilo dos shows */
+.specialties {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 1rem;
+    justify-content:start;
+    margin-top: 50px;
+    
+}
+
+.specialty {
+    background: rgba(169, 169, 169, 0.8);
+    color: #050505;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 10px;
+    margin-top: 20px;
+
+}
+
+.specialty a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: inherit; /* Mantém a cor do texto da div */
+}
+
+.specialty:hover {
+    background: #4F4F4F;
+    transform: translateY(-5px);
+
+}
+
+.videos {
+    
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 150px;
+    gap: 30px;
+    
+}
+
+aside h5 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+
+
+.myvideos span {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fdfdfd;
+    text-align: center;
+}
+
+.youtube-thumbnail {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.youtube-thumbnail:hover {
+    opacity: 0.8;
+}
+
+.profile-yt {
+    display: block;
+    width: 180px;
+    height: 180px;
+    max-width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+
+/* Estilo Contatos */
+
+.contato {
+    
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: column;
+    margin-top: 50px;
+    
+}
+
+.social-icons {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+}
+
+.social-icons a {
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px; /* Ajuste o tamanho do ícone */
+    width: 30px; /* Ajuste o tamanho do botão */
+    height: 30px; /* Ajuste o tamanho do botão */
+    text-decoration: none ; /* Excluir sublinhado */
+    margin-bottom: 15px;
+}
+
+.social-icons span {
+    display: block;
+    margin-top: 10px; /* Espaço entre o ícone e o texto */
+    font-size: 14px;
+    color: #fff; /* Cor do texto */
+}
+
+.social-icons a:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+}
+
+.icon.instagram {
+    background-color: #E4405F; /* Cor personalizada para Instagram */
+}
+
+.icon.youtube {
+    background-color: #FF0000; /* Cor personalizada para YouTube */
+}
+
+.icon.email {
+    background-color: #0082c8; /* Cor personalizada para Email */
+}
+
+.icon.tiktok {
+    background-color: #000000; /* Cor personalizada para TikTok */
+}
+
+.specialties_contato {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 1rem;
+    justify-content:start;
+    margin-top: 10px;
+    
+}
+
+.specialty_contato {
+    background: rgba(169, 169, 169, 0.8);
+    color: #050505;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 10px;
+    margin-top: 20px;
+
+}
+
+.specialty_contato a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: inherit; /* Mantém a cor do texto da div */
+}
+
+.specialty_contato:hover {
+    background: #4F4F4F;
+    transform: translateY(-5px);
+
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #f5f5f5;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    
+}
+
+/* --- Responsividade --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .videos {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin: 20px auto;
+    }
+
+    .contato {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .specialties {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    .profile-pic {
+        width: 240px;
+        height: 240px;
+    }
+
+    .youtube-thumbnail {
+        max-width: 250px;
+    }
+
+    .social-icons a {
+        padding: 10px;
+        font-size: 18px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .specialty {
+        max-width: 100%;
+    }
+}
+
+
+  
